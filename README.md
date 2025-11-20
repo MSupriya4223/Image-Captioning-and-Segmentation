@@ -157,7 +157,6 @@ python main.py --mode train_seg --coco_root /coco2017 --instances_json /coco2017
 Segmention Inference (main.py):
 ```
 python main.py --mode infer_seg --image_path images\train.jpg --seg_checkpoint checkpoints\maskrcnn_epoch1.pth
-
 ```
 ---
 ## Output
