@@ -164,7 +164,7 @@ python main.py --mode infer_seg --image_path images\train.jpg --seg_checkpoint c
 
 | Original | Mask | Boxes |
 |---------|---------|---------|
-| ![](image\original.png) | ![](image\colored_mask.png) | ![](image\boxes.png) |
+| ![](image/original.png) | ![](image\colored_mask.png) | ![](image\boxes.png) |
 
 ### Caption:
 a train is traveling down the tracks in a city.
