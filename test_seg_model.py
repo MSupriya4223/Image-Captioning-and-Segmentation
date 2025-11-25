@@ -1,3 +1,45 @@
+"""
+===============================================================================
+Image Captioning and Segmentation System
+===============================================================================
+
+This project integrates two advanced computer vision tasks into a unified system:
+
+1. **Image Captioning**  
+   Uses a Transformer-based decoder model trained on COCO captions to generate
+   natural-language descriptions of input images. The model processes extracted
+   CNN features and sequentially predicts caption tokens based on a learned
+   vocabulary.
+
+2. **Semantic Segmentation + Object Detection**  
+   Utilizes a Mask R-CNN (ResNet50 FPN) model to detect objects in an image,
+   generate instance-level segmentation masks, and draw bounding boxes around
+   top-scoring detections.
+
+The goal of this system is to demonstrate how deep learning models can work
+together to provide a richer understanding of visual data—combining pixel-level
+segmentation, object identification, and high-level caption generation.
+
+A FastAPI backend is used to run inference with both models, and a modern web
+dashboard allows users to upload images and view results such as:
+- Original image
+- Segmentation mask
+- Bounding box image
+- Generated caption
+- Top detected classes with confidence scores
+
+This project is built for educational, research, and demonstration purposes.
+
+-------------------------------------------------------------------------------
+Author
+-------------------------------------------------------------------------------
+Name: **Supriya Mandal, Madana Venkatesh & Biki Haldar**  
+GitHub: https://github.com/MSupriya4223  
+Year: 2025  
+
+If you use this code or extend it, please give proper credit to the author.
+===============================================================================
+"""
 import os
 import argparse
 from pathlib import Path
@@ -374,3 +416,4 @@ if __name__ == "__main__":
         conf_thresh=args.conf,
         device=args.device
     )
+
