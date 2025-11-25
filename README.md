@@ -141,22 +141,22 @@ Contributions are welcome! Feel free to:
 
 Training Captioning Model:
 ```
-python main.py --mode train_cap --coco_root /coco2017 --captions_json /coco2017/annotations/captions_train2017.json --subset 30000 --epochs 20
+python main_model_training.py --mode train_cap --coco_root /coco2017 --captions_json /coco2017/annotations/captions_train2017.json --subset 30000 --epochs 20
 ```
 
- Caption Inference (main.py):
+ Caption Inference (main_model_training.py):
 ```
-python main.py --mode infer_cap --image_path images\train.jpg --cap_checkpoint checkpoints\caption_epoch20.pth
+python main_model_training.py --mode infer_cap --image_path images\train.jpg --cap_checkpoint checkpoints\caption_epoch20.pth
 ```
 
 Training Segmentation Model:
 ```
-python main.py --mode train_seg --coco_root /coco2017 --instances_json /coco2017/annotations/instances_train2017.json --subset 10000 --epochs 5
+python main_model_training.py --mode train_seg --coco_root /coco2017 --instances_json /coco2017/annotations/instances_train2017.json --subset 10000 --epochs 5
 ```
 
-Segmention Inference (main.py):
+Segmention Inference (main_model_training.py):
 ```
-python main.py --mode infer_seg --image_path images\train.jpg --seg_checkpoint checkpoints\maskrcnn_epoch1.pth
+python main_model_training.py --mode infer_seg --image_path images\train.jpg --seg_checkpoint checkpoints\maskrcnn_epoch1.pth
 ```
 ---
 ## Output
