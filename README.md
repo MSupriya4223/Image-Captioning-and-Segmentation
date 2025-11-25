@@ -46,7 +46,7 @@ Upload an image and see:
 Image-Captioning-and-Segmentation/
 │
 ├── app.py                   # FastAPI backend for hosting (optional)
-├── main.py                  # Main script used for training
+├── main_model_training.py   # Main script used for training
 ├── test_cap_model.py        # Captioning model class and inference functions
 ├── test_seg_model.py        # Segmentation inference functions
 ├── vocab.json               # Vocabulary file for captioning model
